@@ -71,9 +71,10 @@
             }
             #Description button
             {
+                margin-left: auto;
+                margin-right: auto;
                 color: rgb(255, 255, 255);
                 background-color: rgb(45, 45, 45);
-                margin-top: 45px;
                 border: 0px;
                 border-radius: 5px;
                 cursor: pointer;
@@ -97,7 +98,7 @@
             <br>
             <h1>Working Executors:</h1>
             <h1>Synapse X, Sentinel, Maybe SirHurt</h1>
-            <button id = "JBBtn">Click To Copy Loadstring</button>
+            <button id = "JBBtn">loadstring(game:HttpGet('https://raw.githubusercontent.com/SykoticCataclysm/Scripts/master/Paid%20Executors/Jailbreak.lua'))()</button>
             <hr>
         </div>
         <script>
@@ -108,7 +109,7 @@
                 document.body.appendChild(Box);
                 Box.select();
                 document.execCommand("copy");
-                document.body.removeChild("Box");
+                document.body.removeChild(Box);
             });
         </script>
 	</body>
