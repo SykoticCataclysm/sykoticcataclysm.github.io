@@ -85,8 +85,20 @@
             <img src = "https://cdn.discordapp.com/attachments/655842007830495282/671028506486112262/unknown.png">
             <br>
             <h1>Working Executors:</h1>
-            <h1>Synapse X, Sentinel</h1>
+            <h1>Synapse X, Sentinel, Maybe SirHurt</h1>
+            <button id = "JBBtn">Click To Copy Loadstring</button>
             <hr>
-		</div>
+        </div>
+        <script>
+            const JBBtn = document.getElementById("JBBtn");
+            JBBtn.addEventListener("click", () => {
+                const Box = document.createElement("textarea");
+                Box.value = "loadstring(game:HttpGet('https://raw.githubusercontent.com/SykoticCataclysm/Scripts/master/Paid%20Executors/Jailbreak.lua'))()";
+                document.body.appendChild(Box);
+                Box.select();
+                document.execCommand("copy");
+                document.body.removeChild("Box");
+            });
+        </script>
 	</body>
 </html>
