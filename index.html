@@ -78,7 +78,7 @@
                 background-color: rgb(45, 45, 45);
                 border-radius: 20px;
                 cursor: pointer;
-                width: 75%;
+                width: 50%;
                 height: 40px;
             }
         </style>
@@ -87,29 +87,21 @@
         <div id = "Header">
             <h1>Syko's Scripts</h1>
             <hr>
-        </div>
-		<div id = "Title">
-            <h1 href = "https://raw.githubusercontent.com/SykoticCataclysm/Scripts/master/Paid%20Executors/Jailbreak.lua" target = "_blank">JailBreak Script</h1>
+        </div id = "Title">
+            <h1>JailBreak Script</h1>
         </div>
         <div id = "Description">
             <h1>JailBreak Script Containing A TP Bypass, Custom AutoRob, Gun Mods, Vehicle Upgrades, And More!</h1>
             <br>
-            <img src = "https://cdn.discordapp.com/attachments/655842007830495282/671028506486112262/unknown.png">
-            <br>
             <h1>Working Executors:</h1>
             <h1>Synapse X, Sentinel</h1>
-            <button id = "JBBtn">Copy Script Loadstring</button>
+            <button id = "JBBtn">Get Script</button>
             <hr>
         </div>
         <script>
             const JBBtn = document.getElementById("JBBtn");
             JBBtn.addEventListener("click", () => {
-                const Box = document.createElement("textarea");
-                Box.value = "loadstring(game:HttpGet('https://raw.githubusercontent.com/SykoticCataclysm/Scripts/master/Paid%20Executors/Jailbreak.lua'))()";
-                document.body.appendChild(Box);
-                Box.select();
-                document.execCommand("copy");
-                document.body.removeChild(Box);
+		window.open("https://sykoticcataclysm.github.io/Jailbreak")
             });
         </script>
 	</body>
