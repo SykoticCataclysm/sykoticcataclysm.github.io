@@ -34,7 +34,7 @@
                 font-size: 60px;
                 font-style: italic;
             }
-            #Header hr
+            #Header, #Description, #Button hr
             {
                 margin: 50px;
             }
@@ -48,10 +48,6 @@
                 font-family: 'Segoe UI';
                 font-size: 20px;
             }
-            #Description hr
-            {
-                margin: 50px
-            }
             #Description img
             {
                 display: block;
@@ -59,7 +55,8 @@
                 margin-right: auto;
                 width: 80%;
             }
-            #Description button
+
+            #Button button
             {
                 display: block;
                 margin-left: auto;
@@ -79,7 +76,7 @@
                 margin-right: auto;
                 display: flex;
                 justify-content: flex-start;
-                width: 50%; 
+                width: 40%; 
                 line-height: 24px;
                 color: #e8e8e8;
                 font-family: 'Segoe UI';
@@ -92,7 +89,7 @@
                 margin-right: 10%;
                 display: flex;
                 justify-content: flex-end;
-                width: 50%; 
+                width: 40%; 
                 line-height: 24px;
                 color: #e8e8e8;
                 font-family: 'Segoe UI';
@@ -135,13 +132,14 @@
             <div class="align-right">Infinite Donuts</div>
             <div class="align-left">Auto Breakout</div>
             <div class="align-right">WalkSpeed, Gravity Mods</div>
-            <div class="align-left">Weapon Mods: Full Auto, Fire Rate, Mag Size, Camera Shake, Bullet Spread, Bullets Per Shot</div>
+            <div class="align-left">Various Weapon Mods</div>
             <div class="align-right">Criminal, Police, Prisoner, Airdrop ESP</div>
             <div class="align-left">Criminal, Police, Prisoner, Airdrop Tracers</div>
             <div class="align-right">Tracer Width Mod</div>
             <div class="align-left">Custom AutoRob: Bank, Jewelry Store, Museum, Airdrops</div>
             <div class="align-right">Toggleable Store Labels</div>
-            <br>
+        </div>
+        <div id = "Button">
             <hr>
             <button id = "JBBtn">loadstring(game:HttpGet('https://github.com/SykoticCataclysm/Scripts/blob/master/Paid%20Executors/Jailbreak.lua', true)()</button>
             <hr>
