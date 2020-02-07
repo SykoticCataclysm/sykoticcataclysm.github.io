@@ -72,16 +72,6 @@
                 height: 40px;
                 font-size: 18px;
             }
-            #Description li
-            {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                color: rgb(255, 255, 255);
-                width: 80%;
-                height: 24px;
-                font-size: 18px;
-            }
         </style>
 	</head>
 	<body>
@@ -92,48 +82,52 @@
 	    </div>
         <div id = "Description">
             <img src = "https://cdn.discordapp.com/attachments/655842007830495282/671028506486112262/unknown.png">
+            <hr>
             <h1>Amazing Script Containing:</h1>
-            <ul>
-                <li>Working TP Bypass</li>
-                <li>Car NoClip</li>
-                <li>Car Jump</li>
-                <li>Rainbow Car</li>
-                <li>Infinite Nitro</li>
-                <li>Rainbow Nitro</li>
-                <li>Never Break Tires</li>
-                <li>Free Mobile Garage</li>
-                <li>Car Speed, Suspension Height Mods</li>
-                <li>Free Premium JetPack Fuel</li>
-                <li>Infinite JetPack Fuel</li>
-                <li>Give JetPack</li>
-                <li>No Doors</li>
-                <li>No Buildings</li>
-                <li>Anti-Spike Traps</li>
-                <li>Give Items</li>
-                <li>NoClip</li>
-                <li>Fly ( Works For People And Cars )</li>
-                <li>Infinite Jump</li>
-                <li>Click TP</li>
-                <li>No Wait</li>
-                <li>Infinite Donuts</li>
-                <li>Auto Breakout</li>
-                <li>WalkSpeed, Gravity Mods</li>
-                <li>Weapon Mods: Full Auto, Fire Rate, Mag Size, Camera Shake, Bullet Spread, Bullets Per Shot</li>
-                <li>Criminal, Police, Prisoner, Airdrop ESP</li>
-                <li>Criminal, Police, Prisoner, Airdrop Tracers</li>
-                <li>Tracer Width Mod</li>
-                <li>Custom AutoRob: Bank, Jewelry Store, Museum, Airdrops</li>
-                <li>Toggleable Store Labels</li>
-            </ul>
             <br>
+            <li>Working TP Bypass</li>
+            <li>Car NoClip</li>
+            <li>Car Jump</li>
+            <li>Rainbow Car</li>
+            <li>Infinite Nitro</li>
+            <li>Rainbow Nitro</li>
+            <li>Never Break Tires</li>
+            <li>Free Mobile Garage</li>
+            <li>Car Speed, Suspension Height Mods</li>
+            <li>Free Premium JetPack Fuel</li>
+            <li>Infinite JetPack Fuel</li>
+            <li>Give JetPack</li>
+            <li>No Doors</li>
+            <li>No Buildings</li>
+            <li>Anti-Spike Traps</li>
+            <li>Give Items</li>
+            <li>NoClip</li>
+            <li>Fly ( Works For People And Cars )</li>
+            <li>Infinite Jump</li>
+            <li>Click TP</li>
+            <li>No Wait</li>
+            <li>Infinite Donuts</li>
+            <li>Auto Breakout</li>
+            <li>WalkSpeed, Gravity Mods</li>
+            <li>Weapon Mods: Full Auto, Fire Rate, Mag Size, Camera Shake, Bullet Spread, Bullets Per Shot</li>
+            <li>Criminal, Police, Prisoner, Airdrop ESP</li>
+            <li>Criminal, Police, Prisoner, Airdrop Tracers</li>
+            <li>Tracer Width Mod</li>
+            <li>Custom AutoRob: Bank, Jewelry Store, Museum, Airdrops</li>
+            <li>Toggleable Store Labels</li>
+            <hr>
             <button id = "JBBtn">loadstring(game:HttpGet('https://github.com/SykoticCataclysm/Scripts/blob/master/Paid%20Executors/Jailbreak.lua', true)()</button>
             <hr>
         </div>
         <script>
             const JBBtn = document.getElementById("JBBtn");
             JBBtn.addEventListener("click", () => {
-		        JBBtn.select();
+                const Temp = document.createElement("textarea");
+                Temp.value = JBBtn.textContent;
+                document.body.appendChild(Temp);
+                Temp.select();
                 document.execCommand("copy");
+                document.body.removeChild(Temp);
             });
         </script>
 	</body>
